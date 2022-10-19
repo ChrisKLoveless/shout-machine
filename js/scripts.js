@@ -6,6 +6,7 @@ function getAndSetShoutValues() {
 function setFormSubmissionEventHandler() {
     let form = document.querySelector("form");
     form.onsubmit = function (event) {
+        console.log("Submit form successfully");
         event.preventDefault();
         getAndSetShoutValues();
         document.querySelector("div#yell").removeAttribute("class");
